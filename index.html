@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101d22">
+  <meta name="description" content="Imen Zarai's proposed doctoral research: from AI-assisted sustainability assessment to data-quality-aware predictive decision support for SMEs. Research concept for Prof. Dr. Christian Kruse.">
+  <meta property="og:title" content="Beyond the Report | Doctoral Research Vision — Imen Zarai">
+  <meta property="og:description" content="A clear, interactive PhD proposal inspired by the research of Prof. Dr. Christian Kruse at Westfälische Hochschule.">
+  <title>Beyond the Report — EcoPilot AI Research Concept | Imen Zarai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./upgrade.css">
+  <script src="./script.js" defer></script>
+  <script src="./prototype.js" defer></script>
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="logo" href="#top" aria-label="Home"><span class="logo-spark">✳</span> IZ <span class="logo-thin">/ RESEARCH</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#connection">Why this research</a><a href="#prototype">Live prototype</a><a href="#novelty">What is new</a><a href="#architecture">Method</a><a href="#roadmap">Roadmap</a><a href="#about">About me</a>
+    </nav>
+    <a class="top-cta" href="#conversation">Let's discuss <span aria-hidden="true">↗</span></a>
+    <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation">☰</button>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden><a href="#connection">Why this research</a><a href="#prototype">Live prototype</a><a href="#novelty">What is new</a><a href="#architecture">Method</a><a href="#roadmap">Roadmap</a><a href="#about">About me</a><a href="#conversation">Let's discuss</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="wide hero-grid">
+        <div class="hero-copy">
+          <div class="pill"><span class="pulse"></span> Doctoral research vision · Bocholt, Germany</div>
+          <h1>What if SMEs could <em>see the risk</em> <span class="underlined">before</span> it appears?</h1>
+          <p class="hero-lead">A research idea connecting <b>AI, data quality and business process management</b>—designed to make sustainability decisions more proactive, explainable and trustworthy.</p>
+          <div class="hero-actions"><a class="btn btn-lime" href="#prototype">See the future application <span>↗</span></a><a class="btn btn-quiet" href="#connection">Why it fits your research <span>→</span></a></div>
+          <div class="introline"><span class="avatar">IZ</span><div><b>Imen Zarai</b><small>Computer Science Engineer · Former University Lecturer · Entrepreneur</small></div></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of smart factory energy analytics">
+          <div class="hero-art-top"><span>SME INTELLIGENCE / CONCEPT</span><span class="light-online"><i></i> LIVE IDEA</span></div>
+          <svg viewBox="0 0 620 486" class="factory-svg" role="img" aria-label="Illustrated smart factory with energy signals and predictive data">
+            <defs><linearGradient id="building" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b9d5ce"/><stop offset="1" stop-color="#63887f"/></linearGradient><linearGradient id="roof" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9cbab1"/><stop offset="1" stop-color="#42655d"/></linearGradient><pattern id="grid" width="27" height="27" patternUnits="userSpaceOnUse"><path d="M 27 0 L 0 0 0 27" fill="none" stroke="#c7ede0" stroke-opacity=".10" stroke-width="1"/></pattern></defs>
+            <rect width="620" height="486" fill="url(#grid)"/><circle cx="450" cy="155" r="152" fill="#c2f988" fill-opacity=".06"/><circle cx="450" cy="155" r="116" fill="none" stroke="#c2f988" stroke-opacity=".10"/>
+            <path d="M25 380 Q260 356 590 381" stroke="#a1bdb2" stroke-width="3" stroke-opacity=".3" fill="none"/>
+            <path d="M86 338 L86 190 L177 154 L237 180 L237 120 L281 120 L281 184 L368 153 L448 186 L448 336 Z" fill="url(#building)" stroke="#d7eae1" stroke-width="2"/>
+            <path d="M77 190 L174 142 L238 168 L238 109 L292 109 L292 170 L367 142 L459 180" fill="none" stroke="#d9eee6" stroke-width="9" stroke-linejoin="round"/>
+            <path d="M314 152 L314 70 L348 70 L348 145" fill="url(#roof)" stroke="#c7dbd3" stroke-width="3"/><path d="M382 152 L382 100 L416 100 L416 160" fill="url(#roof)" stroke="#c7dbd3" stroke-width="3"/>
+            <g fill="#203f3b" stroke="#acd1c3" stroke-width="2"><rect x="113" y="225" width="50" height="48" rx="4"/><rect x="183" y="225" width="50" height="48" rx="4"/><rect x="253" y="225" width="50" height="48" rx="4"/><rect x="323" y="225" width="50" height="48" rx="4"/><rect x="390" y="225" width="33" height="48" rx="4"/></g>
+            <g stroke="#a5e0cc" stroke-opacity=".55" stroke-width="2"><path d="M138 225v48m-25-24h50M208 225v48m-25-24h50M278 225v48m-25-24h50M348 225v48m-25-24h50"/></g>
+            <path d="M197 336v-44h78v44" fill="#204841" stroke="#cce6db" stroke-width="3"/><path d="M236 292v44" stroke="#a8d0c0" stroke-width="2"/>
+            <path d="M65 356h423" stroke="#c4e9d5" stroke-width="4"/>
+            <g class="signal"><path d="M210 162 C254 89 337 103 383 127 S483 147 505 86" fill="none" stroke="#d5ff8c" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 12"/><circle cx="505" cy="86" r="8" fill="#d5ff8c"/><circle cx="210" cy="162" r="7" fill="#d5ff8c"/></g>
+            <g transform="translate(356,295)"><rect width="219" height="142" rx="13" fill="#eff4e9"/><text x="18" y="27" font-size="12" font-family="monospace" fill="#57736b">NEXT MONTH · FORECAST</text><text x="18" y="70" fill="#133b34" font-size="37" font-family="sans-serif" font-weight="700">−12%</text><text x="18" y="91" font-size="13" font-family="sans-serif" fill="#58726a">energy intensity</text><path d="M18 115 L58 105 L93 110 L126 83 L158 92 L197 61" fill="none" stroke="#2f8878" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="197" cy="61" r="6" fill="#2f8878"/></g>
+            <g transform="translate(26,52)"><rect width="180" height="81" rx="12" fill="#223d3a" stroke="#547c6f"/><circle cx="22" cy="22" r="6" fill="#d8ff88"/><text x="35" y="26" fill="#e8f1eb" font-size="12" font-family="sans-serif">DATA QUALITY</text><text x="17" y="57" fill="#d8ff88" font-size="23" font-family="sans-serif" font-weight="700">CHECK FIRST</text></g>
+          </svg>
+          <div class="hero-art-bottom"><span>01 / The opportunity</span><span>Prediction + explanation + action</span></div>
+        </div>
+      </div>
+      <div class="wide hero-bottom"><span class="eyebrow muted-light">PREPARED FOR A RESEARCH CONVERSATION WITH</span><strong>Prof. Dr. Christian Kruse</strong><span class="muted-light">Wirtschaftsinformatik · Westfälische Hochschule</span></div>
+    </section>
+
+    <section class="section section-offwhite" id="connection">
+      <div class="wide">
+        <div class="section-label"><span class="dot"></span> 01 / RESEARCH CONNECTION</div>
+        <div class="split-heading"><h2>Built around <em>your</em> research field.<br><span>Not a generic AI project.</span></h2><p>Prof. Kruse's work spans digital transformation, IT-based process management and automation, business performance management, and digital assistance systems. The proposed doctorate addresses these themes through one practical question: <b>How do SMEs turn sustainability data into reliable decisions?</b></p></div>
+        <div class="research-bridge">
+          <article class="bridge-card dark"><div class="card-topline">EXISTING RESEARCH CONTEXT <span>↗</span></div><h3>DiNaOpt4KMU<br><span>& WILMA</span></h3><p>Participatory approaches and digital assistance for SME sustainability reporting and materiality assessment.</p><div class="chips"><span>SME processes</span><span>Reporting support</span><span>Digital assistance</span></div><a href="https://www.w-hs.de/win/forschungsprojekt-dinaopt4kmu/wilma-tool-fuer-die-durchfuehrung-einer-doppelten-wesentlichkeitsanalyse/" target="_blank" rel="noopener noreferrer">Explore official WILMA page ↗</a></article>
+          <div class="bridge-middle" aria-hidden="true"><div class="bridge-arrow">→</div><span>RESEARCH<br>CONTINUITY</span></div>
+          <article class="bridge-card bright"><div class="card-topline">MY PROPOSED COMPLEMENTARY DIRECTION <span>✳</span></div><h3>From assessment<br><span>to foresight.</span></h3><p>Research methods for quality-aware forecasting, transparent alerts, and evidence-informed sustainability decisions.</p><div class="chips"><span>Data-quality AI</span><span>Predictive BI</span><span>Decision support</span></div><a href="#demo">See how the idea works ↗</a></article>
+        </div>
+        <p class="source-note">A proposed independent research direction inspired by publicly documented work—not a claim of affiliation, access to WILMA, or an agreed project extension. <a href="https://www.w-hs.de/service/informationen-zur-person/person/kruse/" target="_blank" rel="noopener noreferrer">Professor profile ↗</a> · <a href="https://www.w-hs.de/win/forschungsprojekt-dinaopt4kmu/neuigkeiten/" target="_blank" rel="noopener noreferrer">Project publications ↗</a></p>
+      </div>
+    </section>
+
+    <section class="section scenario-section" id="demo">
+      <div class="wide">
+        <div class="section-label"><span class="dot lime"></span> 02 / ONE SIMPLE EXAMPLE</div>
+        <div class="split-heading"><h2>Imagine one factory.<br><span>One messy dataset.</span></h2><p>A German manufacturing SME wants to anticipate next month's electricity demand. Some readings are missing, production varies, and managers need to know when to trust a forecast—not just see a number.</p></div>
+        <div class="scenario-layout">
+          <div class="sim-panel">
+            <div class="sim-head"><div><small>ILLUSTRATIVE SANDBOX</small><h3>How much can we trust this forecast?</h3></div><span class="live-tag"><i></i> INTERACTIVE</span></div>
+            <div class="sim-line"><div class="sim-top-value"><span>Missing readings</span><output id="missingValue" for="missing">15%</output></div><input id="missing" type="range" min="0" max="40" step="5" value="15" aria-label="Percentage of missing data"><div class="range-label"><span>0% · complete</span><span>40% · fragmented</span></div></div>
+            <div class="sample-chart"><div class="chart-title"><span>Electricity consumption · illustrative</span><span>kWh × 1,000</span></div><svg id="forecastChart" viewBox="0 0 580 238" role="img" aria-label="Example historical consumption with forecast uncertainty band"><g class="gridlines" stroke="#dfe8e1" stroke-width="1"><path d="M43 30H565M43 76H565M43 122H565M43 168H565M43 214H565"/></g><g fill="#61766f" font-size="11" font-family="DM Sans,sans-serif"><text x="5" y="33">150</text><text x="5" y="79">130</text><text x="5" y="125">110</text><text x="5" y="171">90</text><text x="5" y="217">70</text><text x="43" y="235">JAN</text><text x="135" y="235">FEB</text><text x="226" y="235">MAR</text><text x="316" y="235">APR</text><text x="408" y="235">MAY</text><text x="497" y="235">JUN</text></g><path id="confidenceBand" d="" fill="#b8d19b" opacity=".50"/><path id="forecastLine" d="" fill="none" stroke="#507b55" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/><path d="M58 178L149 159L240 151L331 122L422 131" fill="none" stroke="#183e37" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><g fill="#183e37"><circle cx="58" cy="178" r="5"/><circle cx="149" cy="159" r="5"/><circle cx="240" cy="151" r="5"/><circle cx="331" cy="122" r="5"/><circle cx="422" cy="131" r="5"/></g><path d="M453 15V214" stroke="#c5d0c7" stroke-dasharray="3 5"/><text x="465" y="21" font-size="10" font-family="monospace" fill="#64746a">FORECAST →</text></svg></div>
+            <div class="sim-stats"><div><small>Forecast</small><strong id="forecastAmount">121k <i>kWh</i></strong></div><div><small>Illustrative interval</small><strong id="forecastRange">± 10k <i>kWh</i></strong></div><div><small>Reliability message</small><strong id="reliabilityLabel" class="flag">Review inputs</strong></div></div>
+            <div class="warning" id="qualityMessage" role="status">15% of readings are missing. The system should communicate increased uncertainty instead of presenting an overconfident forecast.</div>
+          </div>
+          <aside class="sim-explain"><span class="micro">THE SCIENTIFIC IDEA / IN PLAIN WORDS</span><h3>Don't just predict.<br><em>Know when to be careful.</em></h3><div class="step-mini"><span>01</span><div><b>Check the data</b><p>Are the records missing, delayed, or contradictory?</p></div></div><div class="step-mini"><span>02</span><div><b>Predict with uncertainty</b><p>Does incorporating quality indicators improve reliability?</p></div></div><div class="step-mini"><span>03</span><div><b>Explain the result</b><p>Which features drive the forecast—and how stable is that explanation?</p></div></div><div class="step-mini"><span>04</span><div><b>Support a decision</b><p>Show clear alerts, limits, and the need for human review.</p></div></div><p class="demo-disclaimer">The chart is a designed illustration, not an actual trained model or empirical research result. Adjusting the slider illustrates a research hypothesis; it does not validate it.</p></aside>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section prototype-section" id="prototype">
+      <div class="wide">
+        <div class="section-label"><span class="dot lime"></span> 03 / THE END PRODUCT</div>
+        <div class="prototype-intro">
+          <div><span class="section-eyebrow">THE PROPOSED TECHNICAL OUTPUT</span><h2>Meet <em>EcoPilot AI.</em><br><span>A concept you can explore.</span></h2></div>
+          <div class="prototype-description"><p>A <b>web-based sustainability decision-support system</b> for SMEs. From messy operational data to transparent energy predictions, quality warnings and human-led action.</p><a class="jump-inline" href="#novelty">See what the doctoral research adds ↗</a></div>
+        </div>
+        <div class="app-shell">
+          <aside class="app-sidebar" aria-label="Application prototype views">
+            <div class="app-brand"><span class="app-brand-logo">✳</span><div>EcoPilot <b>AI</b><small>RESEARCH PROTOTYPE</small></div></div>
+            <div class="app-nav-label">EXPLORE THE APP</div>
+            <div class="app-tabs" role="tablist" aria-label="Prototype views">
+              <button class="app-tab is-active" role="tab" aria-selected="true" type="button" data-view="overview"><span>◫</span> Overview</button>
+              <button class="app-tab" role="tab" aria-selected="false" type="button" data-view="forecast"><span>↗</span> Predictive AI</button>
+              <button class="app-tab" role="tab" aria-selected="false" type="button" data-view="quality"><span>◈</span> Data quality</button>
+              <button class="app-tab" role="tab" aria-selected="false" type="button" data-view="explain"><span>✦</span> Explain AI</button>
+              <button class="app-tab" role="tab" aria-selected="false" type="button" data-view="action"><span>◎</span> Decision lab</button>
+            </div>
+            <div class="app-sidebar-foot"><span class="app-live-dot"></span><span>Interactive demonstration<br><small>Illustrative values only</small></span></div>
+          </aside>
+          <div class="app-workspace">
+            <div class="app-workspace-head"><div><span class="app-breadcrumb">DEMO COMPANY / MANUFACTURING SME</span><h3 id="appTitle">Sustainability overview</h3><p id="appSubtitle">The management picture, with tomorrow in view.</p></div><div class="app-head-right"><span class="app-concept-badge">CONCEPT · NOT A TRAINED MODEL</span><span class="app-icon-pill" aria-hidden="true">↗</span></div></div>
+            <div class="app-global-controls" aria-label="Illustrative prototype simulation settings">
+              <div class="app-control-copy"><b>Change the scenario</b><small>Watch the views respond to imperfect data and different workloads.</small></div>
+              <div class="app-control"><label for="prototypeDemand">Operating scenario</label><select id="prototypeDemand"><option value="normal">Normal operations</option><option value="high">Higher production</option><option value="efficient">Efficiency programme</option></select></div>
+              <div class="app-control app-slider-control"><label for="prototypeMissing">Missing data: <output id="prototypeMissingOutput">12%</output></label><input id="prototypeMissing" type="range" min="0" max="35" step="1" value="12"></div>
+            </div>
+            <div id="appView" class="app-view" role="tabpanel" aria-live="polite"></div>
+          </div>
+        </div>
+        <div class="prototype-note"><span class="note-dot">i</span><p><b>Research prototype, not an operational product.</b> All figures, charts, alerts and explanations in this demonstration are synthetic and respond to simple illustrative rules. No company data, deployed forecasting model, or validated performance claims are implied. The doctoral research would design, implement and rigorously evaluate the actual methods.</p></div>
+      </div>
+    </section>
+
+    <section class="section section-offwhite" id="architecture">
+      <div class="wide">
+        <div class="section-label"><span class="dot"></span> 04 / HOW I WOULD RESEARCH IT</div>
+        <div class="split-heading"><h2>From data to action.<br><span>Five connected steps.</span></h2><p>Not a giant platform to build on day one. Start with one measurable sustainability KPI—energy consumption—then study what changes when the prediction model explicitly considers data quality.</p></div>
+        <div class="architecture-grid" id="architectureSteps">
+          <button class="arch-step active" type="button" data-step="0" aria-pressed="true"><span>01</span><b>Collect</b><small>SME data</small><i>↗</i></button>
+          <button class="arch-step" type="button" data-step="1" aria-pressed="false"><span>02</span><b>Check</b><small>Data quality</small><i>↗</i></button>
+          <button class="arch-step" type="button" data-step="2" aria-pressed="false"><span>03</span><b>Predict</b><small>Machine learning</small><i>↗</i></button>
+          <button class="arch-step" type="button" data-step="3" aria-pressed="false"><span>04</span><b>Explain</b><small>Uncertainty + XAI</small><i>↗</i></button>
+          <button class="arch-step" type="button" data-step="4" aria-pressed="false"><span>05</span><b>Decide</b><small>Management actions</small><i>↗</i></button>
+        </div>
+        <div class="arch-detail"><div class="arch-graphic"><svg viewBox="0 0 370 205" aria-hidden="true" role="img"><rect x="20" y="18" width="330" height="167" rx="18" fill="#173932"/><path d="M53 147h266" stroke="#396457" stroke-width="2"/><g id="archGraphic"></g></svg></div><div class="arch-text"><small id="archKicker">STEP 01 / DATA FOUNDATION</small><h3 id="archTitle">Connect real business signals.</h3><p id="archDescription">Bring together energy readings, production volume, operational schedules and weather context in a reproducible dataset.</p><div class="arch-tools" id="archTools"><span>Python</span><span>SQL</span><span>ETL</span></div></div></div>
+      </div>
+    </section>
+
+
+    <section class="section novelty-section" id="novelty">
+      <div class="wide">
+        <div class="section-label"><span class="dot"></span> 05 / NOVELTY & ADDED VALUE</div>
+        <div class="split-heading"><h2>Not more AI.<br><span>More trustworthy decisions.</span></h2><p>The scientific ambition is not to reinvent sustainability reporting or to build another dashboard. It is to investigate <b>how uncertainty caused by data quality can be carried through prediction, explanation and management action.</b></p></div>
+        <div class="novelty-compare">
+          <div class="compare-heading"><div><span>THE RESEARCH CONTEXT</span><h3>Where the field is today</h3></div><div class="compare-mid">→</div><div><span>PROPOSED DOCTORAL CONTRIBUTION</span><h3>What I would investigate</h3></div></div>
+          <div class="compare-row"><div><b>SME sustainability assessment</b><p>Digital support for structuring, documenting and managing sustainability topics—an established direction in DiNaOpt4KMU / WILMA.</p></div><div class="compare-mid">01</div><div><b>Prediction as a complementary layer</b><p>Forecast selected energy and emissions KPIs, and connect predicted deviations to business-process decisions.</p></div></div>
+          <div class="compare-row"><div><b>Conventional forecasting workflows</b><p>Data are cleaned or imputed, then a model produces a prediction. Reliability under changing data quality still needs careful testing.</p></div><div class="compare-mid">02</div><div><b>Quality-aware predictive learning</b><p>Research models that incorporate quality indicators into forecasts, uncertainty estimates and warning thresholds.</p></div></div>
+          <div class="compare-row"><div><b>Explanations of model outputs</b><p>Feature-attribution tools can show which variables are associated with a forecast.</p></div><div class="compare-mid">03</div><div><b>Explanations with reliability context</b><p>Evaluate whether explanations remain stable when measurements are missing, delayed or inconsistent.</p></div></div>
+          <div class="compare-row"><div><b>Business monitoring and reporting</b><p>Managers see KPIs and can review performance using enterprise information systems.</p></div><div class="compare-mid">04</div><div><b>Closed-loop decision support</b><p>Quality warning → forecast → explanation → human action → monitored process outcome.</p></div></div>
+        </div>
+        <div class="contribution-head"><div><span class="section-eyebrow">THREE TESTABLE SCIENTIFIC CONTRIBUTIONS</span><h3>The PhD contribution is a method — <em>the web app is its testbed.</em></h3></div><p>Research outputs must be validated against existing methods and documented in scientific publications.</p></div>
+        <div class="contributions">
+          <article class="contrib-card"><span class="contrib-number">A / METHOD</span><div class="contrib-icon">◈</div><h4>Quality representation</h4><p>Formalize and track completeness, consistency, validity and freshness in heterogeneous SME data.</p><div class="contrib-test"><b>Evaluate with</b><span>Controlled degradation · quality coverage</span></div></article>
+          <article class="contrib-card"><span class="contrib-number">B / AI</span><div class="contrib-icon">↗</div><h4>Reliable prediction</h4><p>Investigate learning and uncertainty calibration that explicitly take those quality signals into account.</p><div class="contrib-test"><b>Evaluate with</b><span>MAE · RMSE · interval coverage · robustness</span></div></article>
+          <article class="contrib-card"><span class="contrib-number">C / BUSINESS PROCESS</span><div class="contrib-icon">◎</div><h4>Explainable action</h4><p>Test how managers interpret quality-sensitive explanations and choose actions in sustainability workflows.</p><div class="contrib-test"><b>Evaluate with</b><span>Explanation stability · decision study</span></div></article>
+        </div>
+        <div class="benefits-panel">
+          <div class="benefits-intro"><span class="section-eyebrow">POTENTIAL VALUE FOR INDUSTRY</span><h3>What could change<br>for a real SME?</h3><p>These are <b>expected benefits to test</b>, not achieved results or guaranteed savings.</p></div>
+          <div class="benefit-grid">
+            <div><span>01 / EARLIER</span><b>Anticipate KPI deviations</b><p>Spot the risk of an energy threshold being exceeded before the reporting period ends.</p></div>
+            <div><span>02 / SAFER</span><b>Avoid false confidence</b><p>Show managers when missing or inconsistent inputs weaken the prediction.</p></div>
+            <div><span>03 / CLEARER</span><b>Understand forecasts</b><p>See influential factors alongside warning labels and the limits of explanation.</p></div>
+            <div><span>04 / ACTIONABLE</span><b>Connect analytics to processes</b><p>Move from a chart to a documented managerial review, intervention and follow-up.</p></div>
+          </div>
+        </div>
+        <p class="source-note novelty-source">Research fit: <a href="https://www.w-hs.de/service/informationen-zur-person/person/kruse/" target="_blank" rel="noopener noreferrer">Prof. Kruse's areas: process management, performance management and digital assistance ↗</a> · <a href="https://www.w-hs.de/win/forschungsprojekt-dinaopt4kmu/neuigkeiten/" target="_blank" rel="noopener noreferrer">DiNaOpt4KMU publications ↗</a>. The proposal is complementary; no existing project access, integration or partnership is claimed.</p>
+      </div>
+    </section>
+
+    <section class="section section-offwhite" id="roadmap">
+      <div class="wide"><div class="section-label"><span class="dot"></span> 06 / DOCTORAL ROADMAP</div><div class="split-heading"><h2>A focused path.<br><span>36 months, clear outputs.</span></h2><p>An indicative research plan. Select any phase in the Gantt chart to see its experiments, practical tasks and deliverables. The start date depends on doctoral admission and funding.</p></div>
+        <div class="gantt-shell"><div class="gantt-head"><div><small>INTERACTIVE RESEARCH PLAN</small><h3>36-month Gantt chart</h3></div><div class="gantt-legend"><span><i style="background:#d5fa87"></i> Methods</span><span><i style="background:#8fcbbb"></i> Engineering</span><span><i style="background:#e6a781"></i> Evaluation</span></div></div>
+        <div class="gantt-scroll"><div class="gantt-board" id="ganttBoard"></div></div>
+        <div class="gantt-detail" id="ganttDetail" aria-live="polite"></div><p class="gantt-note">Indicative research schedule, not a promised completion date. Publications, partner access and doctoral requirements may alter the timing.</p></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about"><div class="wide about-grid"><div class="about-art"><span class="about-deco">ENGINEER<br>EDUCATOR<br>BUILDER</span><div class="about-letter">IZ<span>✳</span></div><small>5 years across technology, industry and education</small></div><div class="about-content"><div class="section-label"><span class="dot lime"></span> 07 / WHY I CAN CONTRIBUTE</div><h2>Research mindset.<br><em>Real-world experience.</em></h2><p>I am <b>Imen Zarai</b>, a Computer Science Engineer with five years of experience spanning data analytics, BI, technology projects, and teaching.</p><div class="credential"><span>01</span><div><b>University lecturer in Tunisia</b><p>Taught analytical and technical subjects and worked closely with students.</p></div></div><div class="credential"><span>02</span><div><b>Founder of IZ Academy</b><p>Built a technology training business; experience managing learning and business operations.</p></div></div><div class="credential"><span>03</span><div><b>Entrepreneurial and technical experience</b><p>Involved in three technology ventures/projects, with skills in Python, SQL, Power BI and machine learning.</p></div></div><p class="about-ambition">“My long-term goal is to contribute to applied research and become a university lecturer and researcher in Germany.”</p><a href="https://imen-zarai-portfolio-documents.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-link">Explore my portfolio ↗</a></div></div></section>
+
+    <section class="section ask-section" id="conversation"><div class="wide ask-card"><div><div class="section-label"><span class="dot lime"></span> 08 / AN INVITATION TO DISCUSS</div><h2>Could this become<br><em>a funded research collaboration?</em></h2><p>I would value Prof. Kruse's feedback on the scientific question, alignment with his research priorities, possible SME collaboration, scientific novelty, and whether a <b>Wissenschaftliche Mitarbeiterin mit Promotionsmöglichkeit</b> opportunity might be available through a current or future project.</p><div class="ask-actions"><a class="btn btn-lime" href="mailto:christian.kruse@w-hs.de?subject=Forschungsinteresse%20und%20Promotionsm%C3%B6glichkeit%20%E2%80%93%20Imen%20Zarai">Request a conversation ↗</a><button id="copyPitch" class="btn btn-outline" type="button">Copy 30-second pitch ↗</button></div><small id="copyMessage" class="copy-message" role="status"></small></div><div class="ask-panel"><span>THREE QUESTIONS FOR OUR MEETING</span><ol><li>Where could this research add genuine scientific value to your group's priorities?</li><li>Which technical scope and industry partners would make it feasible?</li><li>Could a funded doctoral research position be explored?</li></ol><div class="ask-note">Open proposal. Flexible topic. No claim of existing funding or supervision.</div></div></div></section>
+  </main>
+  <footer class="footer"><div class="wide footer-row"><div><strong>IZ ✳ RESEARCH</strong><span>Imen Zarai · Proposed PhD research concept · October 2026</span></div><div class="footer-links"><a href="https://www.w-hs.de/service/informationen-zur-person/person/kruse/" target="_blank" rel="noopener noreferrer">Prof. Kruse profile ↗</a><a href="https://www.w-hs.de/win/forschungsprojekt-dinaopt4kmu/neuigkeiten/" target="_blank" rel="noopener noreferrer">DiNaOpt4KMU publications ↗</a><a href="#top">Back to top ↑</a></div></div></footer>
+</body>
+</html>
